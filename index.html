@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Catálogo de Carros</h1>
+  </header>
+  <main>
+    <section class="carros">
+      <div class="modelo">
+        <button class="bt-carro" onclick="carro('Audi A3', '279990.00')"><img class="img-carro" src="img/audi-a3.jpg" alt=""></button>
+        <h2 class="nome-carro">Audi A3</h2>
+        <p>279990.00</p>
+      </div>
+      <div class="modelo">
+        <button class="bt-carro" onclick="carro('Chevy Blazer', '364900.00')"><img class="img-carro" src="img/blazer.jpg" alt=""></button>
+        <h2 class="nome-carro">Chevy Blazer</h2>
+        <p>364900.00</p>
+      </div>
+      <div class="modelo">
+        <button class="bt-carro" onclick="carro('Honda HRV', '220000.00')"><img class="img-carro" src="img/honda-hrv.jpg" alt=""></button>
+        <h2 class="nome-carro">Honda HRV</h2>
+        <p>220000.00</p>
+      </div>
+      <div class="modelo">
+        <button class="bt-carro" onclick="carro('Fiat Strada', '100000.00')"><img class="img-carro" src="img/strada.jpg" alt=""></button>
+        <h2 class="nome-carro">Fiat Strada</h2>
+        <p>100000.00</p>
+      </div>
+    </section>
+    <section class="calculadora">
+      <p class="tipo">Veículo</p>
+      <h1 id="nomeVeiculo" class="info">???</h1>
+      <p class="tipo">Valor</p>
+      <h2 id="valor">000.00</h2>
+      <form>
+        <label for="vlrEntrada">Valor entrada</label>
+        <input type="number" name="vlrEntrada" id="vlrEntrada">
+        <label for="parcelas">Total de parcelas</label>
+        <input type="number" name="parcelas" id="parcelas">
+        <label for="juros">Taxa de juros (%)</label>
+        <input type="number" name="juros" id="juros">
+      </form>
+      <button id="calcular" onclick="calcular()">Calcular</button>
+      <p class="tipo">Valor da parcela</p>
+      <h1 class="info" id="valorParcela">???</h1>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

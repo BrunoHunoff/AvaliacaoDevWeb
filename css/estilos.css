@@ -1,0 +1,70 @@
+main{
+    display: flex;
+    align-items:    self-start;
+    margin-inline: 200px;
+    border: 1px solid black;
+    padding: 40px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    padding: 0;
+    background-color: #fff;
+}
+
+p{
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.titulo{
+    margin-block: 30px;
+    font-size: 40px;
+}
+
+.carros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.img-carro{
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.nome-carro{
+    margin: 0;
+}
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.info{
+    font-size: 38px;
+}
+
+#calcular{
+    background-color: #e1e1e1;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-block: 10px;
+    width: 100px;
+}
